@@ -1,0 +1,29 @@
+[package]
+name = "boost_bimap"
+description = "Boost C++ library boost_bimap packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_bimap"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_bimap"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_concept_check = { version = "0.1.0", path = "../boost_concept_check" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_container_hash = { version = "0.1.0", path = "../boost_container_hash" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_iterator = { version = "0.1.0", path = "../boost_iterator" }
+boost_lambda = { version = "0.1.0", path = "../boost_lambda" }
+boost_mpl = { version = "0.1.0", path = "../boost_mpl" }
+boost_multi_index = { version = "0.1.0", path = "../boost_multi_index" }
+boost_preprocessor = { version = "0.1.0", path = "../boost_preprocessor" }
+boost_static_assert = { version = "0.1.0", path = "../boost_static_assert" }
+boost_throw_exception = { version = "0.1.0", path = "../boost_throw_exception" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+boost_utility = { version = "0.1.0", path = "../boost_utility" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
